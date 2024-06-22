@@ -1,0 +1,237 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    color: white !important;
+}
+
+p{
+    font-size: 15px !important;
+}
+
+/*--------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------*/
+header{
+    /* background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)), url(../media/imgs/day/day-cloudyy.jpg); */
+    background-position: center center;
+    background-size: cover;
+    transition: 0.5s all;
+    /* opacity: 0; */
+}
+
+header .container{
+    /* background-image:linear-gradient(45deg, rgba(0, 0, 0, 0.305), rgba(0, 0, 0, 0.305)), url(../media/imgs/day/day-cloudyy.jpg); */
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0px 0px 5px 1px #ffffff;
+    transition: 0.5s all;
+    /* opacity: 0; */
+}
+
+.hopa{
+    background-position: top !important;
+    transition: 0.5s all !important;
+}
+
+.hopa-top{
+    animation: hopa-top 0.5s ;
+}
+
+@keyframes hopa-top{
+    0%{
+        opacity: 0.5;
+        background-position: top ;
+    }
+    100%{
+        opacity: 1;
+        background-position: center center;
+    }
+}
+
+.hopa-bottom{
+    animation: hopa-bottom 0.5s ;
+}
+
+
+@keyframes hopa-bottom{
+    0%{
+        opacity: 0.5;
+        background-position: bottom ;
+    }
+    100%{
+        opacity: 1;
+        background-position: center center;
+    }
+}
+
+.search-days-col{
+    backdrop-filter: blur(15px);
+}
+
+
+.done{
+    animation: done 2s both;
+    transition: 0.5s all;
+}
+
+@keyframes done{
+    0%{
+        opacity: 0;
+        scale: 0;
+    }
+    25%{
+        opacity: 1;
+        scale: 1;
+    }
+    50%{
+        opacity: 1;
+        scale: 1;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.undone{
+    animation: undone 2s both;
+    transition: 0.5s all;
+}
+
+@keyframes undone{
+    0%{
+        opacity: 1;
+        scale: 1;
+    }
+    25%{
+        opacity: 0;
+        scale: 0;
+    }
+    50%{
+        opacity: 0;
+        scale: 0;
+    }
+    100%{
+        opacity: 0;
+        scale: 0;
+    }
+}
+
+.time-card{
+    transition: 0.4s;
+}
+
+.time-card:hover{
+    transform: translateY(-20%);
+    background-color: white !important;
+    color: black;
+}
+
+.day-card{
+    transition: 0.4s;
+}
+
+.day-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.s{
+    animation: s 0.4s
+}
+
+@keyframes s{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.op{
+    animation: op 0.5s;
+}
+
+/* animation: op 1s; */
+
+@keyframes op{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.to-top{
+    animation: to-top 1s both ;
+}
+
+@keyframes to-top{
+    0%{
+        transform: translateY(300%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.to-left{
+    animation: to-left 1s both ;
+}
+
+@keyframes to-left{
+    0%{
+        transform: translateX(150%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.show{
+    animation: show 1.5s both;
+    animation-delay: 1s;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.scale{
+    animation: scale 1.5s both;
+}
+
+@keyframes scale{
+    0%{
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

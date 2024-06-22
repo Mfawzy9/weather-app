@@ -1,0 +1,22 @@
+@media (max-width: 992px){
+    #weatherInformationsContainer{
+        padding: 10px 50px !important;
+        gap: 5px !important;
+    }
+    .weather-datils{
+        gap: 5px !important;
+    }
+}
+
+
+@media (max-width: 767px){
+    #hoursContainer{
+        border: none !important;
+    }
+    .container .search-days-col{
+        border: none !important;
+    }
+    .container .search-days-col .search-days{
+        padding: 20px !important;
+    }
+}

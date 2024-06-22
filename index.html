@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="shortcut icon" href="media/imgs/favicon.png" type="image/x-icon">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--fontawesome-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--main css file-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--media-->
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body data-bs-theme="dark">
+    
+
+
+    <header class="min-vh-100 d-flex justify-content-center align-items-center position-relative flex-column overflow-hidden">
+
+      <div class="container rounded position-relative scale overflow-hidden">
+        <div class="row">
+          
+          <!--main content-->
+          <div class="col-12 col-md-7 col-lg-8 main-content-col">
+
+            <div class="main-content h-100 d-flex flex-column justify-content-between align-items-center pt-5 pb-3">
+
+            <!--weather location and date-->
+            <div id="mainTitleContainer" class="show weather-title text-center bg-black bg-opacity-25 rounded p-3 mb-2">
+              <h1 id="mainLocationName" class="location"></h1>
+              
+            </div>
+
+            <!--weather informations-->
+            <div id="weatherInformationsContainer" class="show weather-informations d-flex flex-column flex-lg-row justify-content-center align-items-center bg-black bg-opacity-25 rounded py-3 px-2 mb-2 gap-4 gap-xl-5">
+              
+            </div>
+
+            <!-- weather times-->
+            
+            <div id="hoursContainer" class="time-list gap-2 justify-content-center d-flex pt-3">
+              
+              <div id="timeOneContainer" role="button" class="to-top time time-card d-flex flex-column align-items-center bg-black gap-2 bg-opacity-50 rounded p-2 text-center " style="animation-delay: 1.0s;">
+                <p class="m-0 border-bottom pb-1 hour"></p>
+                <img class="status" src="" width="40px" height="40px" alt="status">
+                <p class="m-0 deg fw-bold"></p>
+              </div>
+              <div id="timeTwoContainer" role="button" class="to-top time time-card d-flex flex-column align-items-center bg-black gap-2 bg-opacity-50 rounded p-2 text-center " style="animation-delay: 1.1s;">
+                <p class="m-0 border-bottom pb-1 hour"></p>
+                <img class="status" src="" width="40px" height="40px" alt="status">
+                <p class="m-0 deg fw-bold"></p>
+              </div>
+              <div id="timeThreeContainer" role="button" class="to-top time time-card d-flex flex-column align-items-center bg-black gap-2 bg-opacity-50 rounded p-2 text-center " style="animation-delay: 1.2s;">
+                <p class="m-0 border-bottom pb-1 hour"></p>
+                <img class="status" src="" width="40px" height="40px" alt="status">
+                <p class="m-0 deg fw-bold"></p>
+              </div>
+              <div id="timeFourContainer" role="button" class="to-top time time-card d-flex flex-column align-items-center bg-black gap-2 bg-opacity-50 rounded p-2 text-center " style="animation-delay: 1.3s;">
+                <p class="m-0 border-bottom pb-1 hour"></p>
+                <img class="status" src="" width="40px" height="40px" alt="status">
+                <p class="m-0 deg fw-bold"></p>
+              </div>
+              <div id="timeFiveContainer" role="button" class="to-top time time-card d-flex flex-column align-items-center bg-black gap-2 bg-opacity-50 rounded p-2 text-center " style="animation-delay: 1.4s;">
+                <p class="m-0 border-bottom pb-1 hour"></p>
+                <img class="status" src="" width="40px" height="40px" alt="status">
+                <p class="m-0 deg fw-bold"></p>
+              </div>
+              <div id="timeSixContainer" role="button" class="to-top time time-card d-flex flex-column align-items-center bg-black gap-2 bg-opacity-50 rounded p-2 d-none d-sm-flex text-center " style="animation-delay: 1.5s;">
+                <p class="m-0 border-bottom pb-1 hour"></p>
+                <img class="status" src="" width="40px" height="40px" alt="status">
+                <p class="m-0 deg fw-bold"></p>
+              </div>
+              <div id="timeSevenContainer" role="button" class="to-top time time-card d-flex flex-column align-items-center bg-black gap-2 bg-opacity-50 rounded p-2 d-none d-lg-flex text-center " style="animation-delay: 1.6s;">
+                <p class="m-0 border-bottom pb-1 hour"></p>
+                <img class="status" src="" width="40px" height="40px" alt="status">
+                <p class="m-0 deg fw-bold"></p>
+              </div>
+              <div id="timeEightContainer" role="button" class="to-top time time-card d-flex flex-column align-items-center bg-black gap-2 bg-opacity-50 rounded p-2 d-none d-lg-flex text-center " style="animation-delay: 1.7s;">
+                <p class="m-0 border-bottom pb-1 hour"></p>
+                <img class="status" src="" width="40px" height="40px" alt="status">
+                <p class="m-0 deg fw-bold"></p>
+              </div>
+              <div id="timeNineContainer" role="button" class="to-top time time-card d-flex flex-column align-items-center bg-black gap-2 bg-opacity-50 rounded p-2 d-none d-lg-flex text-center " style="animation-delay: 1.8s;">
+                <p class="m-0 border-bottom pb-1 hour"></p>
+                <img class="status" src="" width="40px" height="40px" alt="status">
+                <p class="m-0 deg fw-bold"></p>
+              </div>
+              <div id="timeTenContainer" role="button" class="to-top time time-card d-flex flex-column align-items-center bg-black gap-2 bg-opacity-50 rounded p-2 d-none d-lg-flex text-center " style="animation-delay: 1.9s;">
+                <p class="m-0 border-bottom pb-1 hour"></p>
+                <img class="status" src="" width="40px" height="40px" alt="status">
+                <p class="m-0 deg fw-bold"></p>
+              </div>
+
+
+            </div>
+
+            </div>
+
+
+          </div>
+
+          <!--days and search part-->
+          <div class="col-12 col-md-5 col-lg-4 search-days-col rounded-end">
+            <div class="search-days px-lg-3 py-2 text-center">
+              <!--search-->
+              <form class="search-box d-flex flex-column gap-3 border-bottom pb-3 mb-md-3 to-left" style="animation-delay: 1s;">
+                <div class="d-flex gap-1">
+                  <input id="searchInput" type="search" class="form-control" placeholder="search location">
+                  <button id="searchSubmit" type="submit" class="btn btn-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <button id="currentLocation" class="btn btn-success text-center fw-semibold"><i class="fa-solid fa-location-dot me-2 fs-4 align-middle"></i>Get your current location!</button>
+              </form>
+              <p class="alert alert-danger my-3 text-center d-none invalid-location"><i class="fa-solid fa-circle-exclamation fa-beat-fade me-2"></i>Enter a vaild location</p>
+              
+              <!--days-->
+              <div id="daysContainer" class="days d-flex flex-column gap-2">
+
+                <p class="text-center mb-2 to-left fs-4" style="animation-delay: 1.1s;">the next 5 days forecast</p>
+
+                <div role="button" class="dayy to-left day-card d-flex p-2 justify-content-between align-items-center bg-black bg-opacity-25 rounded " style="animation-delay: 1.2s;">
+
+                </div>
+
+                <div role="button" class="dayy to-left day-card d-flex p-2 justify-content-between align-items-center bg-black bg-opacity-25 rounded " style="animation-delay: 1.3s;">
+
+                </div>
+
+                <div  role="button" class="dayy to-left day-card d-flex p-2 justify-content-between align-items-center bg-black bg-opacity-25 rounded " style="animation-delay: 1.4s;">
+
+                </div>
+
+                <div role="button" class="dayy to-left day-card d-flex p-2 justify-content-between align-items-center bg-black bg-opacity-25 rounded " style="animation-delay: 1.5s;">
+
+                </div>
+
+                <div role="button" class="dayy to-left day-card d-flex p-2 justify-content-between align-items-center bg-black bg-opacity-25 rounded " style="animation-delay: 1.6s;">
+
+                </div>
+
+
+                
+
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="js/index.js"></script>
+    <!--bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
