@@ -1,6 +1,6 @@
 
 "use strict"
-
+window.scrollTo(0, 0);
 // cancel form default action (reload)
 document.querySelector('form').addEventListener('submit' , function(e){
     e.preventDefault();
@@ -57,6 +57,7 @@ document.getElementById('currentLocation').addEventListener('click' , function()
             mainLocationName.innerHTML = currentLocationName;
             search(currentLocationName);
             backgroundAni();
+            window.scrollTo(0, 0);
         },function(denied){
             search();
             setTimeout(function(){
@@ -116,6 +117,7 @@ try {
 searchSubmit.addEventListener('click' , async function(){
     await search(searchInput.value);
     mainLocationName.innerHTML = searchInput.value
+    window.scrollTo(0, 0);
 });
 
 searchSubmit.disabled = true;
@@ -351,6 +353,7 @@ function hoursForecast(data){
 for(let i = 0 ; i < timesContainer.length ; i++){
     timesContainer[i].addEventListener('click' ,async function(){
         displayHoursCardsDatiles(i+12);
+        window.scrollTo(0, 0);
     })
 }
 
@@ -572,6 +575,7 @@ function daysForecast(data){
 for(let i = 0 ; i < daysContainer.length ; i++){
     daysContainer[i].addEventListener('click' , async function(){
         displayDaysDatiles(i+1)
+        window.scrollTo(0, 0);
     })
 }
 
