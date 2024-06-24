@@ -58,6 +58,7 @@ document.getElementById('currentLocation').addEventListener('click' , function()
             search(currentLocationName);
             backgroundAni();
             window.scrollTo(0, 0);
+            searchInput.value = null;
         },function(denied){
             search();
             setTimeout(function(){
@@ -92,6 +93,8 @@ try {
         setTimeout(function(){
             document.querySelector('.invalid-location').classList.add('d-none');
         } ,400)
+
+        searchInput.value = null;
 
         mainChanges(data);
 
