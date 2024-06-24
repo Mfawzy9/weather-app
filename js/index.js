@@ -70,10 +70,10 @@ document.getElementById('currentLocation').addEventListener('click' , function()
 })
 
 search();
-// to update weather data every 3 min
+// to update weather data every 5 min
 setInterval(async function(){
     search(mainLocationName.innerHTML)
-},180000)
+},300000)
 
 async function search(location = 'alex'){
     mainLocationName.innerHTML = location;
