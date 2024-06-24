@@ -94,8 +94,6 @@ try {
             document.querySelector('.invalid-location').classList.add('d-none');
         } ,400)
 
-        searchInput.value = null;
-
         mainChanges(data);
 
         // today hours part
@@ -120,6 +118,7 @@ try {
 searchSubmit.addEventListener('click' , async function(){
     await search(searchInput.value);
     mainLocationName.innerHTML = searchInput.value
+    searchInput.value = null;
     window.scrollTo(0, 0);
 });
 
