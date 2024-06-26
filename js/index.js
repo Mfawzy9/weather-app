@@ -105,6 +105,7 @@ try {
         // background change
         mainBackgroundChanger(data);
         backgroundAni();
+        window.scrollTo(0, 0);
     }
 
 
@@ -119,7 +120,6 @@ searchSubmit.addEventListener('click' , async function(){
     await search(searchInput.value);
     mainLocationName.innerHTML = searchInput.value
     searchInput.value = null;
-    window.scrollTo(0, 0);
 });
 
 searchSubmit.disabled = true;
